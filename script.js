@@ -59,13 +59,13 @@
             alert(' No me has dado ningún audio :( ');
         }
 
-    if (audioFile) {
+    if (videoFile) {
 
             const videoURL = URL.createObjectURL(videoFile);
             console.log(videoURL);
             const videoElement = document.createElement('video')
             videoElement.controls = true;
-            videoElement.src = audioURL;
+            videoElement.src = videoURL;
             document.body.appendChild(videoElement);
 
         }  else {
